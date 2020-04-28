@@ -10,4 +10,8 @@ public class MyRange {
     public boolean startWithInclude() {
         return this.input.startsWith("[");
     }
+
+    public int getStartNumber() {
+        return 0;
+    }
 }
