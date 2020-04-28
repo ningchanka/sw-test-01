@@ -1,10 +1,13 @@
 package demo;
 
 public class MyRange {
+    private final String input;
+
     public MyRange(String input) {
+        this.input = input;
     }
 
     public boolean startWithInclude() {
-        return false;
+        return this.input.startsWith("[");
     }
 }
