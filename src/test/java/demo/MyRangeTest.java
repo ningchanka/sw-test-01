@@ -12,4 +12,10 @@ public class MyRangeTest {
         assertTrue("Input should start with [", result);
     }
 
+    @Test
+    public void input_start_with_exclude(){
+        MyRange myRange = new MyRange("(1,5]");
+        boolean result = myRange.startWithInclude();
+        assertFalse("Input should start with (", result);
+    }
 }
