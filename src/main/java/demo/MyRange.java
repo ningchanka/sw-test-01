@@ -12,6 +12,9 @@ public class MyRange {
     }
 
     public int getStartNumber() {
-        return this.input.charAt(1) - 48;
+        if(startWithInclude()){
+            return this.input.charAt(1) - 48;
+        }
+        return this.input.charAt(1) - 47;
     }
 }
