@@ -33,4 +33,11 @@ public class MyRangeTest {
         assertEquals(2, actualNumber);
     }
 
+    @Test
+    public void input_end_with_include(){
+        MyRange myRange = new MyRange("[1,5]");
+        boolean result = myRange.endWithInclude();
+        assertTrue("Input should end with [", result);
+    }
+
 }
