@@ -12,6 +12,6 @@ public class MyRange {
     }
 
     public int getStartNumber() {
-        return 0;
+        return this.input.charAt(1) - 48;
     }
 }
